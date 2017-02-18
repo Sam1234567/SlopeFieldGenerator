@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Image</title>
+</head>
+<body>
+    <form>
+        <label for="xStart">X Start:</label><br>
+        <input type="text" id="xStart"><br>
+        <label for="xEnd">X End:</label><br>
+        <input type="text" id="xEnd"><br>
+        <label for="yStart">Y Start:</label><br>
+        <input type="text" id="yStart"><br>
+        <label for="yEnd">Y End:</label><br>
+        <input type="text" id="yEnd"><br>
+        <label for="stepSize">Step Size:</label><br>
+        <input type="text" id="stepSize"><br>
+    </form>
+
+    <button onclick="getSlope()">Go</button><br>
+
+    <br><canvas id="slopeField" width="300" height="150" style="border:1px solid #d3d3d3"></canvas><br>
+    <button onclick="getSlope()">Draw</button>
+
+    <script src="directionalField.js"></script>
+</body>
+</html>
